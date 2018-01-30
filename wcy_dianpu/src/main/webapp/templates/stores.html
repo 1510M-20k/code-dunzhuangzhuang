@@ -1,0 +1,64 @@
+<ion-header-bar class="bar-stable">
+<div class="buttons">
+    <button class="button button-icon ion-ios-arrow-back" ng-click="$ionicGoBack()">
+    </button>
+  </div>
+  <h1 class="title">主页</h1>
+  
+</ion-header-bar>
+
+<ion-view>
+<ion-content  class="coupon">
+	<div class="content">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">店铺名称:　偶遇餐厅</span>　
+        </label>
+        <div class="item">
+          <span>营业时间:</span>&nbsp;
+          <input type="text" class="in_25" placeholder="９:00">－<input type="text" class="in_25" placeholder="23:00">
+        </div>
+        <div class="item">
+          <span>是否营业:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="yy"> 营业中&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="yy"> 休息中 
+        </div>
+        <div class="item">
+          <span>店内消费:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="xf"> 支持&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="xf"> 不支持 
+        </div>
+        <div class="item">
+          <span>支持外卖:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="wm"> 支持&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="wm"> 不支持 
+        </div>
+        <div class="item">
+          <span>外卖费:</span>&nbsp;
+          <input type="text" class="in_25" placeholder="50">元内 配送费:<input type="text" class="in_25" placeholder="5">元
+        </div>
+        <div class="item">
+          <span>其他费用:</span>
+          <input type="text" class="in_25" placeholder="餐盒费"> － <input type="text" class="in_25" placeholder="1">元
+        </div>
+        <label class="item item-input">
+          <span class="input-label">配送时间:</span>
+          <input type="text"  placeholder="大约需要多长时间送达">
+        </label>
+        <div class="item">
+          <span>优惠券:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="yhq"> 开启&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="yhq"> 关闭 
+        </div>
+        <div class="item">
+          <span>会员卡:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="hyk"> 开启&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="hyk"> 关闭 
+        </div>
+      </div>
+      <div class="padding">
+      	<button class="button button-outline button-stable">马上发布</button> 
+      </div>
+    </div>
+</ion-content>
+</ion-view>

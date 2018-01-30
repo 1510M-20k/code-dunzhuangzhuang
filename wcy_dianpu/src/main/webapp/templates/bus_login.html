@@ -1,0 +1,31 @@
+<ion-header-bar class="bar-stable">
+
+	<h1 class="title">用户登录</h1>
+
+</ion-header-bar>
+<ion-view view-title="用户登录">
+	<ion-content>
+		<div class="list" style="margin-top: 20px;">
+			<label class="item item-input">
+              <span class="input-label">账　　户:</span>
+              <input type="text" ng-model="user.username" placeholder="">
+            </label>
+			<label class="item item-input">
+              <span class="input-label">登录密码:</span>
+              <input  type="password" placeholder="">
+              
+            </label>
+			
+		</div>
+<li class="item-checkbox" style="padding-left: 20%;position: relative;">
+           <label class="checkbox" style="left:10%">
+             <input type="checkbox" checked="">
+           </label>
+        我同意并遵守《店客通服务协议》
+        </li>
+		<div class="divbutton">
+			<button class="button button-block button-assertive" ng-click="bus_revise()">立即创建</button>
+
+		</div>
+	</ion-content>
+</ion-view>

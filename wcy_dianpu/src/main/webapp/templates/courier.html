@@ -1,0 +1,27 @@
+<ion-header-bar class="bar-stable">
+<div class="buttons">
+    <button class="button button-icon ion-ios-arrow-back" ng-click="$ionicGoBack()">
+    </button>
+  </div>
+  <h1 class="title">配送员信息</h1>
+  
+</ion-header-bar>
+
+<ion-view view-title="用户登录">
+<ion-content class="courier">
+	<div class="list" style="margin-top: 20px;">
+			<label class="item item-input">
+              <span class="input-label" style="width:30% !important">姓  名：</span>
+              <input type="text" ng-model="user.username" placeholder="收货人姓名">
+            </label>
+			<label class="item item-input">
+              <span class="input-label"  style="width:30% !important">手机号码：</span>
+              <input  type="text" placeholder="收货人电话号码">
+            </label>
+		</div>
+		<div class="divbutton">
+			<button class="button button-block button-assertive" ng-click="">保存</button>
+		</div>
+</ion-content>
+</ion-view>
+

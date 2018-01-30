@@ -1,0 +1,228 @@
+/* 输入应用名 */
+	.pane {
+		background-color: #F0F0F2;
+	}
+	.item-image {
+		
+	}
+	.title {
+		text-align: center;
+		line-height: 70px;
+		height: 70px;
+		font-size: 16px;
+	}
+	
+	.list-inset {
+		overflow: hidden;
+		margin: 0px 10px;
+		border-radius: 2px;
+		background-color: #fff;
+	}
+	
+	.list-inset .item {
+		margin-bottom: 20px;
+		border-radius: 8px !important
+	}
+	
+	.list-inset {
+		overflow: hidden;
+		margin: 0px 30px;
+		border-radius: 0px;
+		background-color: inherit;
+	}
+	
+	.divbutton {
+		padding: 5% 12%;	
+			
+		margin: 0px auto;
+	}
+	
+	.button.button-block {
+		border-radius: 8px;
+		background: #FF7043;
+		border: 0px
+	}
+/* 选择分类  
+    .item-radio .item-content {
+		position: relative;
+		z-index: 2;
+		padding: 11px 15px;
+		border: none;
+		background-color: #000;
+	}	
+	.item-radio {
+		width: 33.33%;
+		float: left;
+		margin: 0;
+		padding: 0px;
+		vertical-align: top;
+		border-right: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		border-right: 0px;
+		border-top: 0px
+	}	
+	.item {
+		border-top: 1px solid #eee;
+		border-left: 1px solid #eee;
+		background-color: #fff;
+	}	
+	.item-radio input:checked+ .radio-content .item-content {
+		background: #FF7043;
+		color: #fff;
+	}	
+	.item-radio .radio-icon {
+		display: none;
+	}	
+	.item-radio .item-content {
+		padding: 24px 15px;
+		background-color: #f2f2f2;
+		text-align: center;
+	}	
+*/
+	.icon {
+		font-size: 2.4em;
+		
+	}	
+	.icowz {
+		padding-top: 10px;
+		font-family: "微软雅黑";
+	}	
+.padding-example {
+position: relative;
+margin: 30px auto;
+max-width: 280px;
+height: auto;
+background: #fff;
+padding: 30px 0px;
+border-radius: 8px;
+box-shadow: 1px 1px 4px #CECECE;
+text-align: center;
+line-height: 28px; font-size: 13px; font-weight: 800;font-family: "微软雅黑";
+}
+.tabs {background: #fff;height: 52px; line-height: 52px}
+.tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
+    font-size: 12px;
+   
+}
+.tabs-color-positive .tab-item {color:#999999;}
+.button-energized.activated{background: #ff5722;}
+.list .item span{font-size: 14px !important}
+/*表单全局input-label的宽度*/
+.list .input-label {
+    width: 0px !important;
+}
+button{font-size: 14px;}
+.tab-item .icon{font-size: 25px !important;margin-top: 3px;height: 28px;}
+.ion-content{background: #F0F0F2;}
+/* 搜索框 */
+.list-inset{margin:10px;}
+.search-box .list-inset{margin: 5px 10px;}
+.search-box .item-input{padding: 0 0 0 16px}
+/* 首页index页面 */
+.content .sy_code{
+  background-color: #1E82D2;
+  padding:15px 0 0 0; 
+}
+.content .sy_code dl{
+  float: left;
+  width: 33.33%;
+}
+.content .sy_code dl dt{
+
+}
+.content .sy_code dl dt img{
+  width: 30%;
+  margin-left: 37%;
+}
+.content .sy_code dl dd{
+  text-align: center;
+  color: #fff;
+  padding-top: 4px;
+}
+.content .sy_zhinfo{
+  background: #fff;
+  margin:10px 0; 
+  padding:20px 0 10px 0;
+}
+.content .sy_zhinfo h4{
+	margin-top: 0px !important;
+}
+.content .sy_zhinfo h3{
+  font-size: 18px;
+  margin-top: 0px !important;
+}
+.content .sy_zhinfo h3 span{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  color: #ff5722;
+  font-size: 24px;
+}
+.content .sy_zhinfo h3 label{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  color: #999;
+  font-size: 24px;
+}
+.content .sy_zhinfo h4{
+  font-size: 14px;
+  color: #999;
+}
+.content .sy_zhinfo h4 span{
+  display: inline-block;
+  width: 50%;
+  text-align: center; 
+}
+.content .sy_zhinfo a{
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  padding:3px 15px 0 0;
+}
+.bor_index{
+  border-top: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 10px;
+  margin-top: 6px;
+}
+.bor_index{
+  display: inline-block;
+}
+.bor_index dl{
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  border:1px solid #f0f0f0;
+  border-right: none;
+  border-top: none;
+  margin-bottom: 0px;
+}
+.bor_index dl dt img{
+  width:20%;
+  margin-left: 40%;
+  padding-top: 18px;
+}
+.bor_index dl dd{
+  text-align: center; 
+  padding-bottom: 18px;
+  font-size: 13px;
+  color: #353535;
+}
+.index_h3{
+  border:1px solid #e3e3e3;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 38px;
+  background: #fff url(../images/tel.png) no-repeat 7px center;
+  background-size: 18px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.clear{
+	clear: both;
+}

@@ -1,0 +1,42 @@
+<ion-header-bar class="bar-stable">
+<div class="buttons">
+    <button class="button button-icon ion-ios-arrow-back" ng-click="$ionicGoBack()">
+    </button>
+  </div>
+  <h1 class="title">商品分类增加</h1>
+  
+</ion-header-bar>
+
+<ion-view view-title="用户登录">
+<ion-content class="product_add class-add">
+    <div class="content">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">分类名称:</span>
+          <input type="text"  placeholder="请输入商品分类名称">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">分类排序:</span>
+          <input type="text"  placeholder="请输入商品分类排序">
+        </label>
+        <div class="item">
+          <span>是否推荐到首页:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio"  name="ch"> 是 &nbsp;&nbsp;&nbsp;&nbsp;<input class="radiostyle"  type="radio" name="ch"> 否
+        </div>
+        <div class="item">
+          <span>是否收取餐盒费:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio"  name="ch"> 是 &nbsp;&nbsp;&nbsp;&nbsp;<input class="radiostyle"  type="radio" name="ch"> 否
+        </div>
+        <label class="item item-input">
+          <span class="input-label">图片:</span>
+          <label for="sc">上传图片</label><input type="file" value="上传图片" id="sc" hidden>
+        </label>
+      </div>
+      <div class="padding">
+      	<button class="button button-outline button-stable">马上发布</button> 
+      </div>
+    </div>  
+  
+</ion-content>
+</ion-view>
+

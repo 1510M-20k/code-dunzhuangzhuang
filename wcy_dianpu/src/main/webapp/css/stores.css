@@ -1,0 +1,436 @@
+
+/* 我的账户 */
+.account-box{}
+.account-box h1{
+	background: url(../images/qb.png) no-repeat 10px center;
+	padding:20px 40px;
+	background-size: 20px;
+	font-size: 14px;
+	color: #666;
+	line-height: 20px;
+}
+.account-box h2{
+	padding:0px 15px 10px 20px;
+	font-size: 33px;
+	color: #ff5722;
+	margin-top: 0;
+}
+.account-box h2 i{
+	font-size: 0.5em;
+	color: #ff5722;
+	padding-right: 6px;
+}
+.account-box .acc-zh{
+	background: #fff;
+	padding:5px 0;
+}
+.account-box dl{
+	float: left;
+	width: 50%;
+	box-sizing:border-box;
+	padding:20px 0;
+	margin-bottom: 0px;
+}
+.account-box dl dt{
+	text-align: center;
+	color: #999;
+}
+.account-box dl dd{
+	color: #666;
+	text-align: center;
+	padding-top: 5px;
+	font-size: 18px;
+}
+.account-box dl:first-child{
+	border-right: 1px solid #eee;
+}
+.account-box button{
+	background: #ff5722;
+	width: 90%;
+	margin-left: 5%;
+}
+.account-box button.rzshz{
+	background: #C4C4C4;
+}
+.account-box .list{
+	margin-bottom: 20px;
+}
+.account-box .list li i{
+	float: right;
+	margin-right: 10px;
+	color: #666;
+	font-size: 1em;
+}
+.account-box  p{
+	padding-left: 15px;
+	color: #999;
+	padding-bottom: 5px;
+	font-size: 12px;
+	margin: 0;
+}
+/* 资金明细 */
+.check{}
+.check .check-info{
+	margin:10px 0;
+	background: #fff;
+	padding:6px 10px;
+	position: relative;
+}
+.check .check-info h3{
+	color: #999;
+	font-size: 12px;
+}
+.check .check-info p{
+	width: 70%;
+	color: #666;
+	font-size: 12px;
+}
+.check .check-info span{
+	position: absolute;
+	color: #ff5722;
+	font-size: 16px;
+	top: 18px;
+	right: 10px;
+}
+.check .check-info .checkp-q{
+	color: #78909C;
+}
+.check .check-info .border-check{
+	border-bottom: 1px solid #eee;
+}
+.check .check-info h4{
+	font-size: 12px;
+	color: #999;
+}
+.check .check-info h4 label{
+	color: #333;
+}
+/* 我的店铺 */
+.stores{
+	padding-top: 7px;
+}
+.stores p{
+	line-height: 24px;
+}
+.stores p label{
+	width: 25%;
+	text-align: right;
+	display: inline-block;
+}
+.stores p input[type=text]{
+	border-radius: 5px;
+	border:1px solid #ccc;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	display: inline-block;
+	margin-left: 6px;
+}
+.stores p input[type=radio]{
+	margin-left: 10px;
+}
+.stores p .in_70{
+	width: 70%;
+}
+.stores p .in_25{
+	width: 25%;
+}
+.stores p .in_20{
+	width: 15%;
+}
+
+/* 优惠券管理 */
+.coupon .button-assertive{
+	width: 38%;
+	line-height: 32px;
+	min-height: 32px;
+	margin: 10px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.coupon .you_box{
+	margin:0;
+	overflow: hidden;
+}
+.coupon h1{
+	padding-top: 10px;
+	padding-left: 10px;
+	box-sizing:border-box;
+	font-size: 12px;
+}
+.coupon h1 span{
+	color: #ff7043;
+	width: 50%;
+	display: inline-block;
+}
+.coupon h1 label{
+	width: 24%;
+	display: inline-block;
+}
+.coupon h1 em{
+	text-align: center;
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+}
+.coupon h2{
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing:border-box;
+	font-size: 12px;
+	margin: 0;
+	vertical-align: middle;
+}
+.coupon h2 span{
+	color: #999;
+	width: 70%;
+	display: inline-block;
+}
+.coupon h2 label{
+	display: inline-block;
+	width: 13%;
+}
+.coupon h2 label i{
+	font-size: 1.8em;
+	color: #999;
+	vertical-align: middle;
+}
+.coupon .wihte{
+	background: #fff;
+}
+.coupon .you_blue{
+	background: #f5f8fa;
+}
+
+/* 会员等级 */
+.grade .button-assertive{
+	width: 38%;
+	line-height: 32px;
+	min-height: 32px;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.grade .grade-info{
+	width: 94%;
+	margin-left: 3%;
+	border-radius: 4px;
+	border:1px solid #ddd;
+	background: #fff;
+	margin-top: 10px;
+
+}
+.grade .grade-info h3{
+	font-size: 14px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.grade .grade-info p{
+	color: #333;
+	font-size: 14px;
+	white-space: normal;
+	color: #ff5722;
+	padding-left: 10px;
+}
+.grade .grade-info p i{
+	color: #999;
+	float: right;
+	margin-right: 10px;
+	font-size: 1.8em;
+}
+/* 添加优惠券 */
+.coupon{
+	margin-top: 10px;
+}
+.coupon p{
+	line-height: 32px;
+}
+.coupon p span{
+	width: 27%;
+	text-align: right;
+	display: inline-block;
+	float: left;
+}
+.coupon p input[type=text]{
+	border-radius: 5px;
+	border:1px solid #ccc;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	display: inline-block;
+	margin-left: 6px;
+	width: 68%;
+}
+.coupon .button-stable{
+	width: 90%;
+	margin-left: 5%;
+	background: #78909c !important;
+	border:none;
+	color: #fff !important;
+	margin: 10px 5%;
+	min-height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.coupon .in_70{
+	width: 70%;
+}
+.coupon .in_25{ 
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    width: 25%;
+}
+/* 添加会员卡 */
+.grade-add{
+	margin-top: 10px;
+}
+.grade-add p{
+	line-height: 32px;
+}
+.grade-add p span{
+	width: 27%;
+	display: inline-block;
+	text-align: right;
+}
+.grade-add p select{
+	width: 60%;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	display: inline-block;
+	margin-left: 6px;
+}
+.grade-add p input[type=text]{
+	border-radius: 5px;
+	border:1px solid #ccc;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	display: inline-block;
+	margin-left: 6px;
+	width: 18%;
+}
+.grade-add textarea{
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	padding:5px 6px;
+}
+/* 店铺设置 */
+.store_settings p span{
+	width: 24% !important;
+}
+
+/*分销管理*/
+.distribution{
+	padding: 16px 16px 0 16px;
+	background-color: #fff;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	position: relative;
+	margin: 16px 0;
+}
+.distribution .time{
+	font-size: 12px;
+	color: #666; 
+}
+.distribution .dtitle{
+	margin: 8px 0;
+	font-size: 14px;
+	color: #101010; 
+}
+.distribution .info{
+	color: #666;
+	line-height: 22px;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+.distribution .price{
+	color: #ff5722;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 18px; 
+    z-index: 3;
+    margin-top: -40px;
+}
+.distribution .sendmessage{
+	width: 80px !important;
+	font-size: 12px; 
+	height: 35px !important;
+    min-height: 30px !important;
+    margin-top: 7px;
+    line-height: 20px;
+    right: 0;
+    position: absolute;
+}
+.distribution .benefit{ 
+	border-top: 1px solid #f0f0f0;
+	width: 99%;
+	font-size: 12px;
+	margin: 0 auto;
+	line-height: 50px;
+}
+.store_settings .button,.ad_add .button{
+	width: 90%;
+	margin-left: 5%;
+	border:none;
+	background: #78909C !important;
+	color: #fff !important;
+	font-size: 14px;
+	min-height: 40px;
+	line-height: 40px;
+}
+/* 广告管理 */
+.advertisement{
+	margin-top: 10px;
+}
+.advertisement .button-energized {
+    background-color: #ff5722;
+    margin-left: 10px;
+    line-height: 28px;
+    min-height: 28px;
+    font-size: 12px;
+    padding: 2px 25px;
+    margin-bottom: 10px;
+}
+.advertisement .button-energized.activated{
+	background: #ff5722;
+	border:none;
+}
+.advertisement p{
+	padding:15px 10px;
+	line-height: 30px;
+	background: #fff;
+	border-bottom: 1px dashed #ddd;
+	margin:0;
+}
+.advertisement p img{
+	width: 20%;
+	height: 30px;
+	vertical-align: middle;
+	padding-right: 8px;
+}
+.advertisement p i{
+	font-size: 1.8em;
+	color: #999;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+.advertisement p.adver-q{
+	background: #F5F8FA
+}
+.advertisement p span{
+	background: #78909c;
+	color: #fff;
+	margin-left: 8px;
+	padding:2px;
+}
+/* 添加幻灯片 */
+.ad_add {
+	margin-top: 10px;
+}

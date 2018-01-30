@@ -1,0 +1,218 @@
+/* 用户管理 */ 
+.user-box{
+	margin-left: 5px;
+}
+.user-box .time{
+	font-size: 12px;
+	color: #666; 
+}
+.user-box .info{
+	font-size: 14px;
+	color: #101010; 
+	margin-top:5px;
+}
+.user-box .span{
+	font-size: 12px;
+	color: #999 !important; 
+}
+.user-box .price{
+	color: #ff5722;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 18px; 
+    z-index: 3;
+    margin-top: -10px;
+}
+.sendmessage{
+	float: right;
+	margin-right: 20px;
+	width: 120px;
+	margin-bottom: 20px;
+}
+.w60{
+	width: 60px; /*控制点选checkbox范围，不引用w60整行可控制checkbox*/
+}
+
+/* 提现 */
+.acc-take{}
+.acc-take h1{
+	font-size: 12px;
+	margin: 10px;
+}
+.acc-take p{
+	border:1px solid #dddddd;
+	margin-top: 10px;
+	height: 36px;
+	line-height: 36px;
+	width: 96%;
+	margin-left: 2%;
+	box-sizing:border-box;
+}
+.acc-take .acc-take-id{
+	background: #fff;
+	padding:10px 0;
+}
+.acc-take .acc-take-id p input{
+	margin:0px 6px;
+}
+.acc-take .acc-take-id p span{
+	padding-left: 20px;
+}
+.acc-take .acc-take-id p a{
+	float: right;
+	margin-right: 10px;
+	color: #0080ff;
+}
+.acc-take .acc-take-id .button{
+	min-height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.acc-take .list label .input-label{
+	font-size: 14px;
+}
+.acc-take h2{
+	font-size: 14px;
+	margin:10px;
+}
+.acc-take .button-outline{
+	width: 90%;
+	margin-left: 5%;
+	background: #78909c !important;
+	color: #fff !important;
+	min-height: 40px;
+	line-height: 40px;
+	border:none !important;
+}
+.acc-take .button-addk{
+	border:1px solid #ddd;
+}
+/* 实名认证 */
+.acc-cation{}
+.acc-cation .list label .input-label{
+	font-size: 14px;
+}
+.acc-cation .acc-action-id{
+	padding:10px;
+	background: #F6F6F6;
+}
+.acc-cation .acc-action-id h3{
+	font-size: 12px;
+}
+.acc-cation .acc-action-id p{
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	color: #666;
+}
+.acc-cation .acc-action-id img{
+	width: 100%;
+}
+.acc-cation .button-assertive{
+	width: 90%;
+	margin-left: 5%;
+}
+/* 提现记录 */
+.acc-record .acc-record-info{
+	background: #fff;
+	width: 94%;
+	margin-left: 3%;
+	border:1px solid #ddd;
+	padding:10px 10px 0 10px;
+	margin-top: 10px;
+}
+.acc-record .acc-record-info h3{
+	font-size: 14px;
+}
+.acc-record .acc-record-info h3 span{
+	padding-left: 15px;
+}
+.acc-record .acc-record-info h4{
+	font-size: 14px;
+}
+.acc-record .acc-record-info p{
+	font-size: 12px;
+	color: #666;
+}
+.acc-record .acc-record-info p span{
+	padding-left: 20px;
+}
+.acc-record .acc-record-info h5{
+	text-align: right;
+	padding-right: 5px;
+	color: #666;
+	font-size: 12px;
+}
+.acc-record .acc-record-info .acc-record-h5cg{
+	color: #ff5722;
+}
+/* 设置提现密码 */
+.acc-setting h3{
+	padding-left: 10px;
+	color: #78909C;
+	font-size: 14px;
+	padding-top: 10px;
+}
+.acc-setting .button{
+	width: 90%;
+	margin-left: 5%;
+	border:none;
+	background: #78909C !important;
+	color: #fff !important;
+	font-size: 14px;
+	min-height: 40px;
+	line-height: 40px;
+}
+/* 预约管理 */
+.reservation .reservation-info{
+	background: #fff;
+	width: 94%;
+	margin-left: 3%;
+	border: 1px solid #ddd;
+	padding: 10px 10px 0 10px;
+	margin-top: 10px;
+	border-radius: 4px;
+}
+.reservation .reservation-info h3{
+	color: #666;
+	font-size: 12px;
+}
+.reservation .reservation-info h5{
+	text-align: right;
+	margin-right: 5px;
+	color: #666
+}
+.reservation .reservation-info .reser_border{
+	border-bottom: 1px solid #eee;
+}
+.reservation .reservation-info p{
+	color: #666;
+	font-size: 12px;
+}
+.reservation .reservation-info h4{
+	font-size: 14px;
+}
+.reservation .reservation-info h4 span{
+	padding-left: 15px;
+}
+.reservation .reservation-info .button{
+	margin-left: 10px;
+	background: #78909C;
+	min-height: 28px;
+	line-height: 28px;
+	padding:0 20px;
+	margin:10px 0;
+	color: #fff;
+	font-size: 14px;
+	float: right;
+	margin-left: 10px;
+}
+.reservation .reservation-info h5.reser-cg{
+	color: #ff5722;
+}
+/*模板管理*/
+.ion-ionic ｛
+	color:blue;
+｝

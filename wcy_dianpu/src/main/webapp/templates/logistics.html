@@ -1,0 +1,31 @@
+<ion-header-bar class="bar-stable">
+<div class="buttons">
+    <button class="button button-icon ion-ios-arrow-back" ng-click="$ionicGoBack()">
+    </button>
+  </div>
+  <h1 class="title">选择配送方式页面</h1>
+  
+</ion-header-bar>
+
+<ion-view view-title="用户登录">
+<ion-content class="logistics">
+	<div class="wl_xq">
+		<h1><label>外卖配送</label>订单编号：420111111111111 <span>已付款</span></h1>
+		<p><span>2016-5-31 10:55:33</span>订单总额：￥42</p>
+	</div>
+	<div class="wl_xq wl_xx">
+		<h1>基本信息</h1>
+		<p><span>联系电话：18701552814</span>联系人：好小伟</p>
+		<p>收货地址：软通动力有限公司16号楼</p>
+		<p>配送时间：2016年5月20日 12点30分</p>
+		<p>备注：少放辣椒</p>
+	</div>
+	<div class="wl_xq wl_xx">
+		<h1>请选择配送方式</h1>
+		<button class="button button-large button-energized xxps_cur">达达配送</button>
+		<button class="button button-large button-energized" ng-click="address()">自己配送</button>
+		<button class="button button-light">确认</button>
+	</div>
+</ion-content>
+</ion-view>
+

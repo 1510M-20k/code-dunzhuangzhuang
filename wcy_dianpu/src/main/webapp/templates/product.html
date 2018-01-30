@@ -1,0 +1,64 @@
+<ion-header-bar class="bar-stable">
+<div class="buttons">
+    <button class="button button-icon ion-ios-arrow-back" ng-click="$ionicGoBack()">
+    </button>
+  </div>
+  <h1 class="title">主页</h1>
+  
+</ion-header-bar>
+
+<ion-view>
+<ion-content class="product-box">
+	<!-- search -->
+	 <div class="has-header search-box">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="搜索">
+        </label>
+      </div>
+    </div>
+    <p><button class="button button-energized" ng-click="productadd()">+添加菜品</button></p>
+    <div class="product-list">
+	    <p class="button_p"><button class="button button-light">全部</button></p>
+	    <p class="button_p"><button class="button button-light">精品炒菜</button></p>
+	    <p class="button_p"><button class="button button-light">凉菜</button></p>
+	    <p class="button_p"><button class="button button-light">特色菜</button></p>
+	    <p class="button_p"><button class="button button-light">商务套餐</button></p>
+	    <p class="button_p"><button class="button button-light">面食系列</button></p>
+	    <p class="button_p"><button class="button button-light">酒水饮料</button></p>
+	    <p class="button_p"><button class="button button-light">水果满屋</button></p>
+    </div>
+    <div class="clear"></div>
+	<div class="prouduct-info">
+		<dl>
+			<dt><img src="images/raw_1457343198.png"></dt>
+			<dd>
+				<h3><span>24元</span><span>人气</span>水煮鱼(川菜)</h3>
+				<p><i class="ion-social-vimeo"></i><img src="images/yhq.png"></p>
+				<h4><i class="ion-trash-a" ng-click="showConfirm()"></i>
+					<i class="ion-compose"></i><button class="button button-small button-calm">已上架</button></h4>
+			</dd>
+			<div class="clear"></div>
+		</dl>
+		<dl>
+			<dt><img src="images/raw_1457343198.png"></dt>
+			<dd>
+				<h3><span>24元</span><span>人气</span>水煮鱼(川菜)</h3>
+				<p><i class="ion-social-vimeo"></i><img src="images/yhq.png"></p>
+				<h4><i class="ion-trash-a"></i><i class="ion-compose"></i><button class="button button-small button-calm">已上架</button></h4>
+			</dd>
+			<div class="clear"></div>
+		</dl>
+		<dl>
+			<dt><img src="images/raw_1457343198.png"></dt>
+			<dd>
+				<h3><span>24元</span><span class="xinpin">新品</span>水煮鱼(川菜)</h3>
+				<p><i class="ion-social-vimeo"></i><img src="images/yhq.png"></p>
+				<h4><i class="ion-trash-a"></i><i class="ion-compose"></i><button class="button button-small button-balanced">已下架</button></h4>
+			</dd>
+			<div class="clear"></div>
+		</dl>
+	</div>
+</ion-content>
+</ion-view>

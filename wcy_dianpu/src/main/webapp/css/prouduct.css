@@ -1,0 +1,197 @@
+
+/* 商品管理 */
+.product-box .button-energized{
+	background-color: #ff5722;
+	margin-left: 10px;
+	line-height: 28px;
+	min-height: 28px;
+	font-size: 12px;
+	padding:2px 25px;
+}
+.product-box .button-energized.activated{
+	background: #ff5722;
+	border:none;
+}
+.product-box .button_p {
+	float: left;
+	width: 25%;
+	padding-right: 10px;
+	box-sizing:border-box;
+}
+.product-box .button_p button{
+	width: 100%;
+	font-size: 12px;
+	padding:7px;
+	line-height: 28px;
+	min-height: 28px;
+}
+.product-box .product-list{
+	margin:10px;
+	margin-right: 0;
+}
+.product-box .prouduct-info{
+	
+}
+.product-box .prouduct-info dl{
+	margin-bottom:6px;
+	padding: 5px 0;
+	background-color: #fff;
+}
+.product-box .prouduct-info dl dt{
+	float: left;
+	width: 25%;
+}
+.product-box .prouduct-info dl dt img{
+	width: 100%;
+}
+.product-box .prouduct-info dl dd{
+	float: left;
+	width: 75%;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+.product-box .prouduct-info dl dd h3{
+	font-size: 12px;
+	padding:4px 0;
+	margin-bottom: 0;
+}
+.product-box .prouduct-info dl dd h3 .xinpin{
+	color: red;
+}
+.product-box .prouduct-info dl dd h3 span{
+	float: right;
+	margin-right: 15px;
+	color: #ff5722;
+}
+.product-box .prouduct-info dl dd p{
+	margin: 0;
+}
+.product-box .prouduct-info dl dd p i{
+	color: #ff5722;
+	font-size: 1.5em;
+}
+.product-box .prouduct-info dl dd p img{
+	width: 18px;
+	margin-left: 8px;
+}
+.product-box .prouduct-info dl dd h4{
+	margin-top: 0;
+}
+.product-box .prouduct-info dl dd h4 i{
+	color: #999;
+	float: right;
+	margin-right: 15px;
+	font-size: 1.5em;
+}
+.product-box .prouduct-info dl dd h4 button{
+	background-color: #26A69A;
+	border-radius: 0;
+}
+.product-box .prouduct-info dl dd h4 .button-balanced{
+	background-color: #78909C;
+	border-radius: 0;
+}
+/* 添加商品 */
+.product_add{
+	margin-top: 10px;
+}
+.product_add p{
+	line-height: 32px;
+}
+.product_add p span{
+	width: 27%;
+	text-align: right;
+	display: inline-block;
+	float: left;
+}
+/*
+.product_add p input[type=text]{
+	border-radius: 5px;
+	border:1px solid #ccc;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	display: inline-block;
+	margin-left: 6px;
+	width: 68%;
+}*/ 
+.product_add p select{
+	border-radius: 5px;
+	border:1px solid #ccc;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 8px;
+	display: inline-block;
+	margin-left: 6px;
+	width: 40%;
+	margin-right: 3%;
+}
+.product_add p input[type=radio]{
+	margin-left: 10px;
+}
+.product_add p label{
+	background: #78909C;
+	padding:5px 35px;
+	color: #fff;
+	margin-left: 10px;
+}
+.product_add .button-outline{
+	background: #fff !important;
+	min-height: 32px;
+	line-height: 32px;
+	color: #000 !important;
+	border:1px solid #ccc;
+	width: 25%;
+	font-size: 14px;
+	padding:0;
+}
+.product_add p textarea{
+	border-radius: 5px;
+	border:1px solid #ccc;
+	padding-left: 8px;
+	display: inline-block;
+	margin-left: 5%;
+    width: 90%;
+}
+.product_add .button-stable{
+	width: 90%;
+	margin-left: 5%;
+	background: #78909c !important;
+	border:none;
+	color: #fff !important;
+	margin: 10px 5%;
+	height: 40px;
+}
+/* 管理菜品分类 */
+.pro-man{}
+.pro-man .button-assertive{
+	width: 38%;
+	line-height: 32px;
+	min-height: 32px;
+	margin: 10px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.pro-man .row{
+	white-space: normal;
+}
+.pro-man .row-even{
+	background: #F5F8FA;
+	padding-top: 5px;
+}
+.pro-man .row-odd{
+	background: #fff;
+	padding-top: 5px;
+}
+.pro-man .row i{
+	font-size: 1.8em;
+	margin-right: 17px;
+	color: #999
+}
+/* 菜品分类增加 */
+.class-add p span{
+	width: 35%;
+}
+.class-add p input[type=text]{
+	width: 60%;
+}

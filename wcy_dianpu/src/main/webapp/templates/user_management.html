@@ -1,0 +1,80 @@
+<ion-header-bar class="bar-stable">
+<div class="buttons">
+    <button class="button button-icon ion-ios-arrow-back" ng-click="$ionicGoBack()">
+    </button>
+  </div>
+  <h1 class="title">用户管理</h1>
+  
+</ion-header-bar>
+
+<ion-view view-title="用户管理">
+<ion-content>
+    <!-- search -->
+    <div class="has-header search-box">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="搜索">
+        </label>
+      </div>
+    </div>
+    <div class="content"> 
+      <ul class="list">
+        <li class="item item-checkbox">
+           <label class="checkbox w60">
+             <input type="checkbox" checked="">
+           </label>
+           <div class="user-box" ng-click="cost_list()">
+              <p class="time">2016-12-12 13：45</p>
+              <p class="info">郝晓伟（18500608752) &nbsp;&nbsp;&nbsp;&nbsp; <span>共1单</span></p>
+              <div class="price">¥42</div>
+           </div>
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox w60">
+             <input type="checkbox" checked="">
+           </label>
+           <div class="user-box">
+              <p class="time">2016-12-12 13：45</p>
+              <p class="info">郝晓伟（18500608752) &nbsp;&nbsp;&nbsp;&nbsp; <span>共1单</span></p>
+              <div class="price">¥42</div>
+           </div>
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox w60">
+             <input type="checkbox" checked="">
+           </label>
+           <div class="user-box">
+              <p class="time">2016-12-12 13：45</p>
+              <p class="info">郝晓伟（18500608752) &nbsp;&nbsp;&nbsp;&nbsp; <span>共1单</span></p>
+              <div class="price">¥42</div>
+           </div>
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox w60">
+             <input type="checkbox" checked="">
+           </label>
+           <div class="user-box">
+              <p class="time">2016-12-12 13：45</p>
+              <p class="info">郝晓伟（18500608752) &nbsp;&nbsp;&nbsp;&nbsp; <span>共1单</span></p>
+              <div class="price">¥42</div>
+           </div>
+        </li>
+        <li class="item item-checkbox">
+           <label class="checkbox w60">
+             <input type="checkbox">
+           </label>
+           <div class="user-box">
+              <p class="time">2016-12-12 13：45</p>
+              <p class="info">郝晓伟（18500608752) &nbsp;&nbsp;&nbsp;&nbsp; <span>共1单</span></p>
+              <div class="price">¥42</div>
+           </div>
+        </li>
+      </ul> 
+      <div class="clear"></div>
+      <button class="button button-positive sendmessage" ng-click="sendmessage()">发消息</button>
+      <div class="clear"></div>
+    </div>
+</ion-content> 
+</ion-view>
+

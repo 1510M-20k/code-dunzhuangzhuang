@@ -1,0 +1,29 @@
+<ion-header-bar class="bar-stable">
+
+	<h1 class="title">修改密码</h1>
+
+</ion-header-bar>
+<ion-view view-title="修改密码">
+	<ion-content>
+		<div class="list" style="margin-top: 20px;">
+			<label class="item item-input">
+              <span class="input-label">旧密码:</span>
+              <input type="text" ng-model="user.username" placeholder="请输入旧密码">
+            </label>
+			<label class="item item-input">
+              <span class="input-label">新密码:</span>
+              <input  type="text" placeholder="请输入新密码">
+              
+            </label>
+			<label class="item item-input">
+              <span class="input-label">确认密码:</span>
+              <input  type="text" placeholder="请确认新密码">
+              
+            </label>
+		</div>
+		<div class="divbutton">
+			<button class="button button-block button-assertive" ng-click="tabs()">确认</button>
+
+		</div>
+	</ion-content>
+</ion-view>
