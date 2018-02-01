@@ -1,5 +1,5 @@
-﻿<!-- 本页面涉及的js函数，都在head.jsp页面中     -->
-<div id="sidebar" class="menu-min">
+﻿<!-- 本页面涉及的js函数，都在head.jsp页面中 class="menu-min"     -->
+<div id="sidebar">
 
 	<div id="sidebar-shortcuts">
 
@@ -48,8 +48,8 @@
 			</ul>
 		</li>
 		<li id="lm2">
-			<a style="cursor: pointer;" onclick="siMenu('z2','lm2','商品管理','${ctx}/test/list.action')">
-				<i class="icon-desktop"></i> <span>商品管理</span> 
+			<a style="cursor: pointer;" onclick="siMenu('z2','lm2','店铺管理','${ctx}/dianpu/list.action')">
+				<i class="icon-desktop"></i> <span>店铺管理</span> 
 			</a>
 		</li>
 	</ul>

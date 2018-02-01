@@ -11,9 +11,9 @@ import java.util.Map;
 public class FreemarkerHelp {
 	   //用户自定义
 		private static String rootPath = "com.wcy";//目录
-		private static String packageName ="user";//包名				
-		private static String tablename = "wy_user";//表名		
-		private static String objectName = "User";//类名	
+		private static String packageName ="dianpu";//包名				
+		private static String tablename = "wcy_dianpu";//表名		
+		private static String objectName = "Dianpu";//类名	
 		private static String remark = "用户";	 //注释
 		private static String xmname = "wcy_admin";//controller类名称
 		

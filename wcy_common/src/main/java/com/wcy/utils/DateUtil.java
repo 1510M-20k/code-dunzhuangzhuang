@@ -8,6 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
+
 import org.apache.commons.lang.StringUtils;
 
 /**
@@ -345,17 +346,40 @@ public class DateUtil {
     	 return sdf.format(c.getTime());
     }
     /**
+     * 比较data1和当前日期相差的天数分钟
+     * wangyue
+     * 2017年8月23日下午7:56:15
+     * @param data1
+     * @return
+     */
+    public static int getChaMin(String data){    
+        long between_days = 0;
+		try {
+			Date smdate=dateTimeFormat.parse(data);
+			Calendar cal = Calendar.getInstance();    
+			cal.setTime(smdate);    
+			long time1 = cal.getTimeInMillis();                 
+			cal.setTime(new Date());    
+			long time2 = cal.getTimeInMillis();         
+			between_days = (time2-time1)/(1000*60);
+			return Integer.parseInt(String.valueOf(between_days));
+		} catch (ParseException e) {//如果最后一个字符串不是日期类型
+			return -1;
+		}  
+                  
+    }    
+    /**
      * 比较data1和当前日期相差的天数
      * wangyue
      * 2017年8月23日下午7:56:15
      * @param data1
      * @return
      */
-    public static int daysBetween(String data1){    
+    public static int getChaDay(String data){    
         long between_days = 0;
 		try {
 			SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");  
-			Date smdate=sdf.parse(data1);
+			Date smdate=sdf.parse(data);
 			Calendar cal = Calendar.getInstance();    
 			cal.setTime(smdate);    
 			long time1 = cal.getTimeInMillis();                 
@@ -369,14 +393,14 @@ public class DateUtil {
                   
     }    
     public static void main(String[] args) {
-    	String s1 = "/TEST//GF1";
-    	String s2 = "/TEST/GF1/2017-07-01";
-    	String s3 = "/TEST//GF41";
-    	
-    	System.out.println(s1.substring(s1.lastIndexOf("/")));
-    	System.out.println(s2.substring(s2.lastIndexOf("/")));
-    	System.out.println(s3.substring(s3.lastIndexOf("/")));
-
-		System.out.println(daysBetween("2017-08-12"));
+//    	String s1 = "/TEST//GF1";
+//    	String s2 = "/TEST/GF1/2017-07-01";
+//    	String s3 = "/TEST//GF41";
+//    	
+//    	System.out.println(s1.substring(s1.lastIndexOf("/")));
+//    	System.out.println(s2.substring(s2.lastIndexOf("/")));
+//    	System.out.println(s3.substring(s3.lastIndexOf("/")));
+    	System.out.println(DateUtil.getDateTimeFormat(new Date()));
+		System.out.println(getChaMin("2018-02-01 22:22:35"));
 	}
 }

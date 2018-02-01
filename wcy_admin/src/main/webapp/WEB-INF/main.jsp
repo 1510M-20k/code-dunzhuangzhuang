@@ -63,12 +63,13 @@
 	var mid = "fhindex";//后台首页
 	$(function(){
 		//初始化菜单-展开
-		if (typeof ($.cookie('menusf')) == "undefined") {
-			$("#menusf").attr("checked", true);
-			$("#sidebar").attr("class", "menu-min");	
-		} else {
-			$("#sidebar").attr("class", "");
-		}
+// 		if (typeof ($.cookie('menusf')) == "undefined") {
+// 			$("#menusf").attr("checked", true);
+// 			$("#sidebar").attr("class", "ok");	
+// 		} else {
+// 			$("#menusf").attr("checked", false);
+// 			$("#sidebar").attr("class", "menu-min");
+// 		}
 		//换肤
 		$("#skin-colorpicker").ace_colorpicker().on("change",function(){
 			var b=$(this).find("option:selected").data("class");

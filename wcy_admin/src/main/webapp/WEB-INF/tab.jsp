@@ -43,7 +43,7 @@ $( function() {
 	tab.add( {
 		id :'tab1_index1',
 		title :"主页",
-		url :"${ctx}/test/list.action",
+		url :"${ctx}/index.action",
 		isClosed :false
 	});
 });

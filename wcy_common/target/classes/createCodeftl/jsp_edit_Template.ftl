@@ -10,7 +10,7 @@
 		<input type="hidden" name="id" id="id" value="${r"${"}${objectNameLower}.id}"/>
 		<table id="table_report" class="table table-striped table-bordered table-hover">
 		<#list fieldList as var>
-			<#if (var_index > 0) >
+			<#if (var_index > 0 && var[1] != 'Date') >
 			<tr>
 				<td style="width:120px;text-align: right;vertical-align: middle;">${var[2]}:</td>
 				<td><input type="text" name="${var[0]}" id="${var[2]}" value="${r"${"}${objectNameLower}.${var[0]}}" maxlength="32" placeholder="这里输入${var[2]}" title="${var[2]}" style="margin-bottom: 0px"/></td>

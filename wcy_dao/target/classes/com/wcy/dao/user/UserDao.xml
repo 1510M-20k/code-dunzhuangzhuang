@@ -5,55 +5,50 @@
 	
 	<!-- 新增-->
 	<insert id="insert" parameterType="com.wcy.model.user.User">
-		insert into wy_user(
+		insert into wcy_user(
 			id,	
-			user_name,	
-			password,	
-			name,	
 			phone,	
-			email,	
+			name,	
 			create_time,	
-		    update_time
+			update_time,	
+			creater,	
+		    updater
 		) values (
 			#{id},	
-			#{user_name},	
-			#{password},	
-			#{name},	
 			#{phone},	
-			#{email},	
+			#{name},	
 			#{create_time},	
-		    #{update_time}
+			#{update_time},	
+			#{creater},	
+		    #{updater}
 		)
 	</insert>
 	
 	
 	<!-- 删除-->
 	<delete id="delete" parameterType="String">
-		delete from wy_user where  id = #{id}
+		delete from wcy_user where  id = #{id}
 	</delete>
 	
 	
 	<!-- 修改 -->
 	<update id="update" parameterType="com.wcy.model.user.User">
-		update  wy_user
+		update  wcy_user
 	    	 <set> 
 				<if test="id != null and id != '' ">
 					id = #{id},
 				</if>
-				<if test="user_name != null and user_name != '' ">
-					user_name = #{user_name},
-				</if>
-				<if test="password != null and password != '' ">
-					password = #{password},
+				<if test="phone != null and phone != '' ">
+					phone = #{phone},
 				</if>
 				<if test="name != null and name != '' ">
 					name = #{name},
 				</if>
-				<if test="phone != null and phone != '' ">
-					phone = #{phone},
+				<if test="creater != null and creater != '' ">
+					creater = #{creater},
 				</if>
-				<if test="email != null and email != '' ">
-					email = #{email},
+				<if test="updater != null and updater != '' ">
+					updater = #{updater},
 				</if>
 				<if test="update_time != null and update_time != '' ">
 					update_time = #{update_time},
@@ -67,29 +62,27 @@
 	<select id="getById" resultType="com.wcy.model.user.User" parameterType="String">
 		select 
 			a.id,	
-			a.user_name,	
-			a.password,	
-			a.name,	
 			a.phone,	
-			a.email,	
+			a.name,	
 			a.create_time,	
-		    a.update_time
-		from  wy_user a where id = #{id}
+			a.update_time,	
+			a.creater,	
+		    a.updater
+		from  wcy_user a where id = #{id}
 	</select>
 	
 	<!-- 列表(分页) -->
 	<select id="getList" resultType="com.wcy.model.user.User" parameterType="com.wcy.model.user.User">
 		select
 			   a.id,
-			   a.user_name,
-			   a.password,
-			   a.name,
 			   a.phone,
-			   a.email,
+			   a.name,
 			   DATE_FORMAT( a.create_time,'%Y-%m-%d %H:%i:%s')  create_time,
-			   DATE_FORMAT( a.update_time,'%Y-%m-%d %H:%i:%s')  update_time
+			   DATE_FORMAT( a.update_time,'%Y-%m-%d %H:%i:%s')  update_time,
+			   a.creater,
+			   a.updater
 		from 
-				wy_user a
+				wcy_user a
 		<where>
 			<if test="keyword != null and keyword !=''">
 				and a.name like '%${keyword}%'
@@ -106,6 +99,6 @@
 	
 	<!-- 分页查询数量-->
 	<select id="getCount" resultType="int" parameterType="com.wcy.model.user.User">
-		select count(1) from wy_user where 1=1
+		select count(1) from wcy_user where 1=1
 	</select>
 </mapper>

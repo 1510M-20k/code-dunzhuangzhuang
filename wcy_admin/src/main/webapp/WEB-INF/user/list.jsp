@@ -36,13 +36,9 @@
 								<tr>
 									<th class="center"><label><input type="checkbox" id="zcheckbox" /><span class="lbl"></span></label></th>
 									<th class="center">序号</th>
-									<th class="center">用户名</th>
-									<th class="center">密码</th>
-									<th class="center">姓名</th>
-									<th class="center">手机</th>
-									<th class="center">邮箱</th>
+									<th class="center">手机号</th>
+									<th class="center">中文姓名</th>
 									<th class="center">创建时间</th>
-									<th class="center">最后修改时间</th>
 									<th class="center">操作</th>
 								</tr>
 							</thead>
@@ -54,13 +50,9 @@
 											<tr>
 												<td class='center' style="width: 30px;"><label><input type='checkbox' name='ids' value="${var.id}" /><span class="lbl"></span></label></td>
 												<td class='center' style="width: 30px;">${(obj.pageIndex-1)*obj.pageSize+vs.count}</td>
-												<td>${var.user_name}</td>
-												<td>${var.password}</td>
-												<td>${var.name}</td>
 												<td>${var.phone}</td>
-												<td>${var.email}</td>
+												<td>${var.name}</td>
 												<td>${var.create_time}</td>
-												<td>${var.update_time}</td>
 												<td style="width: 30px;" class="center">
 													<div class='hidden-phone visible-desktop btn-group'>
 														<div class="inline position-relative">

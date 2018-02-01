@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.wcy.controller.BaseController;
 import com.wcy.model.user.User;
 import com.wcy.service.user.UserService;
+import com.wcy.utils.UUIDUtils;
 
 @RestController
 @RequestMapping("/user")
-public class UserController extends BaseController {
+public class UserController{
 
 	@Autowired
 	private UserService userService;
@@ -87,7 +87,7 @@ public class UserController extends BaseController {
 		if (id != null && !id.equals("")) {
 			userService.update(user);
 		} else {
-			user.setId(this.get32UUID());
+			user.setId(UUIDUtils.get32UUID());
 			userService.insert(user);
 		}
 		map.put("success", true);

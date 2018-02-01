@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
-
-import ${rootPath}.controller.BaseController;
+import com.wcy.utils.UUIDUtils;
 import ${rootPath}.model.${objectNameLower}.${objectName};
 import ${rootPath}.service.${objectNameLower}.${objectName}Service;
 
@@ -87,7 +86,7 @@ public class ${objectName}Controller extends BaseController {
 		if (id != null && !id.equals("")) {
 			${objectNameLower}Service.update(${objectNameLower});
 		} else {
-			${objectNameLower}.setId(this.get32UUID());
+			${objectNameLower}.setId(UUIDUtils.get32UUID());
 			${objectNameLower}Service.insert(${objectNameLower});
 		}
 		map.put("success", true);
