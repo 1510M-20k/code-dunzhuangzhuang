@@ -10,12 +10,12 @@ import java.util.Map;
 
 public class FreemarkerHelp {
 	   //用户自定义
-		private static String rootPath = "com.wy";//目录
-		private static String packageName ="role";//包名				
-		private static String tablename = "wy_role";//表名		
-		private static String objectName = "Role";//类名	
+		private static String rootPath = "com.wcy";//目录
+		private static String packageName ="user";//包名				
+		private static String tablename = "wy_user";//表名		
+		private static String objectName = "User";//类名	
 		private static String remark = "用户";	 //注释
-		private static String xmname = "wy_admin";//controller类名称
+		private static String xmname = "wcy_admin";//controller类名称
 		
 		/**
 		 * mian方法运行生成代码
@@ -111,17 +111,17 @@ public class FreemarkerHelp {
 		 */
 		private static void createMain(Map<String, Object> data) throws Exception {
 		    String javaPath = System.getProperty("user.dir")+ "/src/main/java/"+ rootPath.replaceAll("\\.", "/")+"/";//Java包名
-			String jsppath =  System.getProperty("user.dir").replace("wy_common", xmname)+ "/src/main/webapp/WEB-INF/"+packageName;//jsp包名
+			String jsppath =  System.getProperty("user.dir").replace("wcy_common", xmname)+ "/src/main/webapp/WEB-INF/"+packageName;//jsp包名
 			/*生成model*/
-		    Freemarker.printFile("modelTemplate.ftl", data, javaPath.replace("wy_common", "wy_model")+"/model/"+packageName+"/"+objectName+ ".java");
+		    Freemarker.printFile("modelTemplate.ftl", data, javaPath.replace("wcy_common", "wcy_model")+"/model/"+packageName+"/"+objectName+ ".java");
 			/*生成controller*/
-		    Freemarker.printFile("controllerTemplate.ftl", data, javaPath.replace("wy_common", xmname)+"/controller/"+packageName+"/"+objectName+ "Controller.java");
+		    Freemarker.printFile("controllerTemplate.ftl", data, javaPath.replace("wcy_common", xmname)+"/controller/"+packageName+"/"+objectName+ "Controller.java");
 			/*生成service*/
-		    Freemarker.printFile("serviceImplTemplate.ftl", data, javaPath.replace("wy_common", xmname)+"/service/"+packageName+"/impl"+"/"+objectName+"ServiceImpl.java");
-		    Freemarker.printFile("serviceTemplate.ftl", data, javaPath.replace("wy_common", "wy_service")+"/service/"+packageName+"/"+objectName+"Service.java");
+		    Freemarker.printFile("serviceImplTemplate.ftl", data, javaPath.replace("wcy_common", xmname)+"/service/"+packageName+"/impl"+"/"+objectName+"ServiceImpl.java");
+		    Freemarker.printFile("serviceTemplate.ftl", data, javaPath.replace("wcy_common", "wcy_service")+"/service/"+packageName+"/"+objectName+"Service.java");
 			/*生成DAO*/
-		    Freemarker.printFile("daojavaTemplate.ftl", data,javaPath.replace("wy_common", "wy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.java");
-		    Freemarker.printFile("daoxmlTemplate.ftl", data,javaPath.replace("wy_common", "wy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.xml");
+		    Freemarker.printFile("daojavaTemplate.ftl", data,javaPath.replace("wcy_common", "wcy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.java");
+		    Freemarker.printFile("daoxmlTemplate.ftl", data,javaPath.replace("wcy_common", "wcy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.xml");
 			/*生成SQL脚本*/
 //		    Freemarker.print("mysql_SQL_Template.ftl", data);  //控制台打印
 //		    Freemarker.print("oracle_SQL_Template.ftl", data);  //控制台打印
