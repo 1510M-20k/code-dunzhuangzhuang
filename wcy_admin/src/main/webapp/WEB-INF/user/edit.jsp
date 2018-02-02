@@ -15,12 +15,12 @@
 			</tr>
 			<tr>
 				<td style="width:120px;text-align: right;vertical-align: middle;">中文姓名:</td>
-				<td><input type="text" name="name" id="中文姓名" value="${user.name}" maxlength="32" placeholder="这里输入中文姓名" title="中文姓名" style="margin-bottom: 0px"/></td>
+				<td><input type="text" name="name" id="中文姓名" value="${user.name}" class="required" maxlength="32" placeholder="这里输入中文姓名" title="中文姓名" style="margin-bottom: 0px"/></td>
 			</tr>
 			<tr>
 				<td style="text-align: center;" colspan="10">
-					<a class="btn btn-mini btn-primary" id="savebtn" onclick="save();">保存</a>
-					<a class="btn btn-mini btn-danger" onclick="frameElement.api.close();">取消</a>
+					<button type="button" class="btn btn-primary btn-sm" id="savebtn" onclick="save();">保存</button>
+					<button type="button" class="btn btn-info btn-sm" onclick="frameElement.api.close();">取消</button>
 				</td>
 			</tr>
 		</table>
@@ -40,15 +40,19 @@
 
 	//保存
 	function save(){
-		$("#savebtn").attr("disabled", "disabled");
-		if(validateForm()){
+		if(validateForm()){//如果返回true，表示验证通过、返回false，表示验证失败，不提交
+			$("#savebtn").attr("disabled", "disabled");
 			$.ajax({
 				type: "POST",
 				url: "${ctx}/user/save.action",
 				data: $("#Form").serialize(),
 				dataType:"json",
-				cache: false,
 				success: function(data){
+// 					alert(1);//alert是同步的，只有执行完，才执行下边的；
+// 					alert(2);
+// 					bootbox.alert("保存成功！");//其他插件alert，基本上都是异步的；
+// 					alert(3);
+					//想要保证同步，必须写在他的方法里边
 					bootbox.alert("保存成功！",function(){
 						api.reload();
 					});

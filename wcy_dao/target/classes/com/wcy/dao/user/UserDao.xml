@@ -99,6 +99,17 @@
 	
 	<!-- 分页查询数量-->
 	<select id="getCount" resultType="int" parameterType="com.wcy.model.user.User">
-		select count(1) from wcy_user where 1=1
+		select count(1) from wcy_user 
+		<where>
+			<if test="keyword != null and keyword !=''">
+				and a.name like '%${keyword}%'
+			</if>
+			<if test="beginTime != null and beginTime != '' ">
+				and a.create_time <![CDATA[>=]]> #{beginTime}
+			</if>
+			<if test="endTime != null and endTime != '' ">
+				and a.create_time <![CDATA[<=]]> #{endTime}
+			</if>
+		</where>
 	</select>
 </mapper>

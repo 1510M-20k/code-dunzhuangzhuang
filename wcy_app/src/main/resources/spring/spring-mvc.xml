@@ -23,8 +23,8 @@
 		<property name="maxUploadSize" value="5400000" />
 		<property name="defaultEncoding" value="utf-8"></property>
 	</bean>
-	<!-- 拦截器  -->
+	<!-- 拦截器 -->
 	<mvc:interceptors>
 		<bean class="com.wcy.interceptor.SystemInterceptor" />
-	</mvc:interceptors>
+	</mvc:interceptors> 
 </beans>

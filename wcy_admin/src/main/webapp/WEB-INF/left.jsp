@@ -34,7 +34,6 @@
 	<!-- #sidebar-shortcuts -->
 
 	<ul class="nav nav-list">
-
 		<li class="active" id="fhindex"><a href="${ctx}/main.action"><i class="icon-dashboard"></i><span>后台首页</span></a></li>
 		<li id="lm1">
 			<a style="cursor: pointer;" class="dropdown-toggle">
@@ -48,8 +47,18 @@
 			</ul>
 		</li>
 		<li id="lm2">
-			<a style="cursor: pointer;" onclick="siMenu('z2','lm2','店铺管理','${ctx}/dianpu/list.action')">
+			<a id="z2" style="cursor: pointer;" onclick="siMenu('z2','lm2','店铺管理','${ctx}/dianpu/list.action')">
 				<i class="icon-desktop"></i> <span>店铺管理</span> 
+			</a>
+		</li>
+		<li id="lm3">
+			<a id="z3" style="cursor: pointer;" onclick="siMenu('z3','lm3','分类管理','${ctx}/goodsType/list.action')">
+				<i class="icon-desktop"></i> <span>分类管理</span> 
+			</a>
+		</li>
+		<li id="lm4">
+			<a id="z4" style="cursor: pointer;" onclick="siMenu('z4','lm4','商品管理','${ctx}/goods/list.action')">
+				<i class="icon-desktop"></i> <span>商品管理</span> 
 			</a>
 		</li>
 	</ul>

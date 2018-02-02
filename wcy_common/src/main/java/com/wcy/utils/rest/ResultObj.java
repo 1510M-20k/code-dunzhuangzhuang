@@ -1,16 +1,16 @@
 package com.wcy.utils.rest;
 
 public class ResultObj {
-	
+	//错误编码
 	private String code=ErrorCode.SUCCESS.name;
-	
+	//返回对象
 	private Object obj;
-	
+	//编码说明
 	private String msg=ErrorCode.SUCCESS.value;
 	
 	public void setError(ErrorCode error) {
 		this.code = error.name;
-		this.msg = error.name;
+		this.msg = error.value;
 	}
 
 	public String getCode() {

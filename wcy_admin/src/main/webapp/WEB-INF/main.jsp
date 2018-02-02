@@ -91,16 +91,16 @@
 	};
 	//点击菜单
 	function siMenu(id,fid,menu_name,menu_url){
-		if(id != mid){
-			$("#"+mid).removeClass();
-			mid = id;
-		}
-		if(fid != fmid){
-			$("#"+fmid).removeClass();
-			fmid = fid;
-		}
-		$("#"+fid).attr("class","active open");
-		$("#"+id).attr("class","active");
+// 		if(id != mid){
+// 			$("#"+mid).removeClass();
+// 			mid = id;
+// 		}
+// 		if(fid != fmid){
+// 			$("#"+fmid).removeClass();
+// 			fmid = fid;
+// 		}
+// 		$("#"+fid).attr("class","active open");
+// 		$("#"+id).attr("class","active");
 		//$("#mainFrame").attr("src",MENU_URL);
 		top.mainFrame.tabAddHandler(id,menu_name,menu_url);
 	}

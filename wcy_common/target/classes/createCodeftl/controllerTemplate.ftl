@@ -17,7 +17,7 @@ import ${rootPath}.service.${objectNameLower}.${objectName}Service;
 
 @RestController
 @RequestMapping("/${objectNameLower}")
-public class ${objectName}Controller extends BaseController {
+public class ${objectName}Controller{
 
 	@Autowired
 	private ${objectName}Service ${objectNameLower}Service;

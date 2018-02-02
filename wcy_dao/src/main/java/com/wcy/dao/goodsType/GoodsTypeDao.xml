@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wcy.dao.goodsType.GoodsTypeDao">
+	
+	
+	<!-- 新增-->
+	<insert id="insert" parameterType="com.wcy.model.goodsType.GoodsType">
+		insert into wcy_goods_type(
+			id,	
+			name,	
+			sort,	
+			is_tj,	
+			is_fschf,	
+		    img
+		) values (
+			#{id},	
+			#{name},	
+			#{sort},	
+			#{is_tj},	
+			#{is_fschf},	
+		    #{img}
+		)
+	</insert>
+	
+	
+	<!-- 删除-->
+	<delete id="delete" parameterType="String">
+		delete from wcy_goods_type where  id = #{id}
+	</delete>
+	
+	
+	<!-- 修改 -->
+	<update id="update" parameterType="com.wcy.model.goodsType.GoodsType">
+		update  wcy_goods_type
+	    	 <set> 
+				<if test="id != null and id != '' ">
+					id = #{id},
+				</if>
+				<if test="name != null and name != '' ">
+					name = #{name},
+				</if>
+				<if test="sort != null and sort != '' ">
+					sort = #{sort},
+				</if>
+				<if test="is_tj != null and is_tj != '' ">
+					is_tj = #{is_tj},
+				</if>
+				<if test="is_fschf != null and is_fschf != '' ">
+					is_fschf = #{is_fschf},
+				</if>
+				<if test="img != null and img != '' ">
+					img = #{img},
+				</if>
+				<if test="update_time != null and update_time != '' ">
+					update_time = #{update_time},
+				</if>
+			</set>
+		where  id = #{id}
+	</update>
+	
+	
+	<!-- 通过ID获取数据 -->
+	<select id="getById" resultType="com.wcy.model.goodsType.GoodsType" parameterType="String">
+		select 
+			a.id,	
+			a.name,	
+			a.sort,	
+			a.is_tj,	
+			a.is_fschf,	
+		    a.img
+		from  wcy_goods_type a where id = #{id}
+	</select>
+	
+	<!-- 列表(分页) -->
+	<select id="getList" resultType="com.wcy.model.goodsType.GoodsType" parameterType="com.wcy.model.goodsType.GoodsType">
+		select
+			   a.id,
+			   a.name,
+			   a.sort,
+			   a.is_tj,
+			   a.is_fschf,
+			   a.img
+		from 
+				wcy_goods_type a
+		<where>
+			<if test="keyword != null and keyword !=''">
+				and a.name like '%${keyword}%'
+			</if>
+			<if test="beginTime != null and beginTime != '' ">
+				and a.create_time <![CDATA[>=]]> #{beginTime}
+			</if>
+			<if test="endTime != null and endTime != '' ">
+				and a.create_time <![CDATA[<=]]> #{endTime}
+			</if>
+		</where>
+		order by id desc limit #{startPos},#{pageSize}
+	</select>
+	
+	<!-- 分页查询数量-->
+	<select id="getCount" resultType="int" parameterType="com.wcy.model.goodsType.GoodsType">
+		select count(1) from wcy_goods_type where 1=1
+	</select>
+</mapper>

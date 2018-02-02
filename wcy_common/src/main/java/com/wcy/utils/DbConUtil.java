@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class DbConUtil {
 	public static Connection getcon(){
-		Thread trd= Thread.currentThread();
+//		Thread trd= Thread.currentThread();
 		String driverClassName = ConfigerUtil.getProPerty("config/jdbc.properties","jdbc.driverClassName");
 		String username = ConfigerUtil.getProPerty("config/jdbc.properties","jdbc.username");
 		String password = ConfigerUtil.getProPerty("config/jdbc.properties","jdbc.password");

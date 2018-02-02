@@ -11,10 +11,10 @@ import java.util.Map;
 public class FreemarkerHelp {
 	   //用户自定义
 		private static String rootPath = "com.wcy";//目录
-		private static String packageName ="dianpu";//包名				
-		private static String tablename = "wcy_dianpu";//表名		
-		private static String objectName = "Dianpu";//类名	
-		private static String remark = "用户";	 //注释
+		private static String packageName ="goods";//包名				
+		private static String tablename = "wcy_goods";//表名		
+		private static String objectName = "Goods";//类名	
+		private static String remark = "商品";	 //注释
 		private static String xmname = "wcy_admin";//controller类名称
 		
 		/**
@@ -23,16 +23,17 @@ public class FreemarkerHelp {
 		 * @throws Exception 
 		 */
 		public static void main(String[] args) throws Exception {
-			//开始生成
+			//装配数据（自己可以给里边放随便放）
 			Map<String,Object> data = new HashMap<String,Object>();		//创建数据模型
 			data.put("rootPath", rootPath);
-			data.put("fieldList", getFields());
+			data.put("fieldList", getFields());//表中字段的集合
 			data.put("remark", remark);						//业务名称
 			data.put("packageName", packageName);						//包名
 			data.put("objectName", objectName);							//类名
 			data.put("objectNameLower", lowerStr(objectName));		//类名(首字母改成 小写)
-			data.put("tablename",tablename);								//表前缀	
+			data.put("tablename",tablename);								//表名
 			data.put("nowDate", new Date());
+			//创建代码
 			createMain(data);
 		}
 		 /**
@@ -110,23 +111,24 @@ public class FreemarkerHelp {
 		 * @throws Exception
 		 */
 		private static void createMain(Map<String, Object> data) throws Exception {
+			//获取后台代码的生成路径
 		    String javaPath = System.getProperty("user.dir")+ "/src/main/java/"+ rootPath.replaceAll("\\.", "/")+"/";//Java包名
 			String jsppath =  System.getProperty("user.dir").replace("wcy_common", xmname)+ "/src/main/webapp/WEB-INF/"+packageName;//jsp包名
 			/*生成model*/
 		    Freemarker.printFile("modelTemplate.ftl", data, javaPath.replace("wcy_common", "wcy_model")+"/model/"+packageName+"/"+objectName+ ".java");
-			/*生成controller*/
-		    Freemarker.printFile("controllerTemplate.ftl", data, javaPath.replace("wcy_common", xmname)+"/controller/"+packageName+"/"+objectName+ "Controller.java");
-			/*生成service*/
-		    Freemarker.printFile("serviceImplTemplate.ftl", data, javaPath.replace("wcy_common", xmname)+"/service/"+packageName+"/impl"+"/"+objectName+"ServiceImpl.java");
-		    Freemarker.printFile("serviceTemplate.ftl", data, javaPath.replace("wcy_common", "wcy_service")+"/service/"+packageName+"/"+objectName+"Service.java");
-			/*生成DAO*/
-		    Freemarker.printFile("daojavaTemplate.ftl", data,javaPath.replace("wcy_common", "wcy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.java");
-		    Freemarker.printFile("daoxmlTemplate.ftl", data,javaPath.replace("wcy_common", "wcy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.xml");
-			/*生成SQL脚本*/
-//		    Freemarker.print("mysql_SQL_Template.ftl", data);  //控制台打印
-//		    Freemarker.print("oracle_SQL_Template.ftl", data);  //控制台打印
-			/*生成jsp页面*/
-		    Freemarker.printFile("jsp_list_Template.ftl", data,jsppath+"/list.jsp");
-		    Freemarker.printFile("jsp_edit_Template.ftl", data,jsppath+"/edit.jsp");
+//			/*生成controller*/
+//		    Freemarker.printFile("controllerTemplate.ftl", data, javaPath.replace("wcy_common", xmname)+"/controller/"+packageName+"/"+objectName+ "Controller.java");
+//			/*生成service*/
+//		    Freemarker.printFile("serviceImplTemplate.ftl", data, javaPath.replace("wcy_common", xmname)+"/service/"+packageName+"/impl"+"/"+objectName+"ServiceImpl.java");
+//		    Freemarker.printFile("serviceTemplate.ftl", data, javaPath.replace("wcy_common", "wcy_service")+"/service/"+packageName+"/"+objectName+"Service.java");
+//			/*生成DAO*/
+//		    Freemarker.printFile("daojavaTemplate.ftl", data,javaPath.replace("wcy_common", "wcy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.java");
+//		    Freemarker.printFile("daoxmlTemplate.ftl", data,javaPath.replace("wcy_common", "wcy_dao")+"/dao/"+packageName+"/"+objectName+"Dao.xml");
+//			/*生成SQL脚本*/
+////		    Freemarker.print("mysql_SQL_Template.ftl", data);  //控制台打印
+////		    Freemarker.print("oracle_SQL_Template.ftl", data);  //控制台打印
+//			/*生成jsp页面*/
+//		    Freemarker.printFile("jsp_list_Template.ftl", data,jsppath+"/list.jsp");
+//		    Freemarker.printFile("jsp_edit_Template.ftl", data,jsppath+"/edit.jsp");
 		}
 }

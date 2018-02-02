@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.wcy.model.user.User;
 import com.wcy.service.user.UserService;
+import com.wcy.utils.Tools;
 import com.wcy.utils.UUIDUtils;
 import com.wcy.utils.rest.ErrorCode;
 import com.wcy.utils.rest.ResultObj;
@@ -54,12 +55,16 @@ public class AppUserController {
 	 * @return
 	 */
 	@RequestMapping("/getOne")
-	@ResponseBody
 	public ResultObj getOne(String id) {
 		ResultObj obj = new ResultObj();
+		
 		try {
-			User user = userService.getById(id);
-			obj.setObj(user);
+			if(Tools.isEmpty(id)){
+				obj.setError(ErrorCode.ERROR3);
+			}else{
+				User user = userService.getById(id);
+				obj.setObj(user);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			obj.setError(ErrorCode.ERROR1);
@@ -73,7 +78,6 @@ public class AppUserController {
 	 * @return
 	 */
 	@RequestMapping("/save")
-	@ResponseBody
 	public ResultObj save(User user) {
 		ResultObj obj = new ResultObj();
 		try {
@@ -94,7 +98,6 @@ public class AppUserController {
 
 	// 删除
 	@RequestMapping("/delete")
-	@ResponseBody
 	public ResultObj delete(HttpServletRequest request, String ids) {
 		ResultObj obj = new ResultObj();
 		try {

@@ -1,14 +1,20 @@
 var error=0;
 var hasfocus = false;
+//就绪函数，页面加载完，自动执行
 $(function(){
+	//获取form表达中的所有input标签，绑定丢失焦点事件；
 	$('form').find(":input").blur(function(){
+		//获取上一级对象
 		var parent = $(this).parent();
+		//获取当前input标签的值，并去除空格
 		var value = $.trim($(this).val());
+		//获取当前标签的title属性；需要注意的是，如果你用的jquery是1.9版本之前的，用attr；如果是1.9或者他之后的版本，用prop
 		var title =  $(this).attr("title");
 		if(typeof(title) == 'undefined'){
 			title="";
 		}
 		var isHidden = $(this).attr("type") == "hidden";
+		//如果不是隐藏的input，并且包含^<>;{0,}这些字符;js正则/^开头$/结尾 []表示选择其中1个{0,}表示任意多个
 		if(!isHidden && !/^[^<>;]{0,}$/.test(value)){
 			$(this).tips({
 				side:2,
@@ -159,7 +165,7 @@ $(function(){
 });
 
 function validateForm(){
-	hasfocus = false;
+	//让form表单中的所有input失去焦点
 	$('form').find(":input").each(function(){
 		$(this).blur();
 	})
